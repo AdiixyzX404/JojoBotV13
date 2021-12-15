@@ -112,20 +112,20 @@ const _reminder = JSON.parse(fs.readFileSync("./database/reminder.json"));
 banChats = false;
 offline = false;
 targetpc = "6281319944917";
-gopay = "0882-1329-2687";
-limitawal = "20"
-ovo = "0882-1329-2687";
-pulsa = "0813-1994-4917";
-dana = "0813-1994-4917"
-namabot = "*Jojo-Bot*";
+gopay = "gada";
+limitawal = "120"
+ovo = "gada";
+pulsa = "60199782326";
+dana = "gada"
+namabot = "*Adyy-Bot*";
 linkimg = "https://telegra.ph/file/fb08daf350ee2092c200f.jpg";
 /*ITU YG DI ATAS LINK IMAGENYA DONASI DANA YA KAWAN*/
 grupct = "https://chat.whatsapp.com/HECLovHbCI6LVVH4Q8FN2C";
-owner = "6281319944917";
-nama_owner = "Arasyaaa";
-instagram = "sofunsyabi.id";
-yt = "https://youtube.com/channel/UCZzt-Qw0zTYc8UP-LL2G5fA";
-fake = "JOJO";
+owner = "60199782326";
+nama_owner = "Adii";
+instagram = "memeupinipinindonesia";
+yt = "https://youtube.com/channel/adiination";
+fake = "DYY";
 thumb = fs.readFileSync("./stik/thumb.jpeg");
 numbernye = "0";
 waktu = "-";
@@ -510,7 +510,7 @@ module.exports = syaa = async (syaa, mek) => {
 
     //MESS
     mess = {
-      wait: `Tunggu Sebentar ya kak, sedang Jojo Proses nihh!!`,
+      wait: `Tunggu Sebentar ya kak, Adyy Proses nihh!!`,
       admin: "*[ ADMIN GROUP ONLY ]*",
       tmbh: "*Tambah parameter 1/enable atau 0/disable*",
       nsfw: "FITUR NSFW BELUM DI AKTIFKAN, AKTIFKAN TERLEBIH DAHULU KETIK /nsfw 1",
@@ -570,7 +570,7 @@ module.exports = syaa = async (syaa, mek) => {
           thumbnail: thumb,
           surface: 200,
           message: fake,
-          orderTitle: "Arasyaaaaa.",
+          orderTitle: "adyyyy.",
           sellerJid: "0@s.whatsapp.net",
         },
       },
@@ -746,11 +746,11 @@ module.exports = syaa = async (syaa, mek) => {
               mimetype: "image/jpeg",
               jpegThumbnail: fs.readFileSync(`./stik/thumb.jpeg`), //Gambarnye
             },
-            title: "Yogi-Fakereply", //Kasih namalu
+            title: "AdiiStah", //Kasih namalu
             description: "SELF BOT",
             currencyCode: "USD",
             priceAmount1000: "2000",
-            retailerId: "Arasyaaaaa",
+            retailerId: "Adyyyyy",
             productImageCount: 1,
           },
           businessOwnerJid: `0@s.whatsapp.net`,
@@ -1003,9 +1003,9 @@ module.exports = syaa = async (syaa, mek) => {
       );
       
       	    // Auto Read
-        syaa.chatRead(from, "read")
+       //syaa.chatRead(from, "read")
         //auto vn 
-        await syaa.updatePresence(from, Presence.recording)
+       //await syaa.updatePresence(from, Presence.recording)
         
         const sotoy = [
         '🍊 : 🍒 : 🍐',
@@ -1142,7 +1142,7 @@ module.exports = syaa = async (syaa, mek) => {
     }
     ////
 /////////AUTO RESPONDER STC
-if (budy.includes("Bot")){
+if (budy.includes("adyy")){
 result = fs.readFileSync(`./strg/stiker/menu.webp`)
   syaa.sendMessage(from, result, sticker, { quoted: mek })
 }
@@ -1262,21 +1262,24 @@ reply("IH NGOMONGNYA JOROK")
       case "infomenu":
         case "allmenu":
           case "menuall":
+              case "menu":
             if (isBanned) return reply(mess.ban)
             cender = `${sender}`
-            reply(`Jangan Lupa Follow Instagram @${instagram}`)
-        var menu = `${ucapanWaktu} kak *${pushname}*
+            var menu = `${ucapanWaktu} kak *${pushname}*
         
 ❋─────────────────❋
-*⦿ Nama :* ${pushname}
-*⦿ Tag :* @${cender.split('@')[0]}
-*⦿ Status :* ${premi}
-*⦿ Jam :* ${jam}
-*⦿ Hari :* ${week} ${weton}
-*⦿ Tanggal :* ${date}
-${readmore}❋─────────────────❋
-
-_ada Bug?_ ketik ${prefix}report _Alasan_
+*• Nama :* ${pushname}
+*• Tag :* @${cender.split('@')[0]}
+*• Status :* ${premi}
+*• Jam :* ${jam}
+*• Hari :* ${week} ${weton}
+*• Tanggal :* ${date}
+*• Prefix :* 「 ${prefixStatus ? "Multi Prefix" : "No Prefix"} 」
+*• Runtime :* ${runtime(process.uptime())}
+*• Hit Today :* ${hit_today.length} Hit
+*• Total Hit :* ${totalhit} Hit
+*• Total Chat :* ${totalchat.length} Chat
+❋─────────────────❋
 
 *OWNER*
 • ${prefix}off
@@ -1475,7 +1478,6 @@ _ada Bug?_ ketik ${prefix}report _Alasan_
 • ${prefix}asupan2
 • ${prefix}tts id _Text_
 • ${prefix}polosanmeme
-• ${prefix}virtex
 • ${prefix}memeindo
 • ${prefix}tovn
 • ${prefix}detikvn <ReplyVn|Jumlah>
@@ -1566,11 +1568,7 @@ _ada Bug?_ ketik ${prefix}report _Alasan_
 - _ARASYA_
 
  *INFO BOT*
-• Prefix : 「 ${prefixStatus ? "Multi Prefix" : "No Prefix"} 」
-• Runtime : ${runtime(process.uptime())}
-• Hit Today : ${hit_today.length} Hit
-• Total Hit : ${totalhit} Hit
-• Total Chat : ${totalchat.length} Chat
+
 
 `;
         sendButImage(from, menu, "by @sofunsyabi.id ❤️", thumb, [
@@ -1616,9 +1614,7 @@ _ada Bug?_ ketik ${prefix}report _Alasan_
               mentions(txti, arr, true)
               break
 				    
-        case "menu":
-          case "m":
-          case "help":
+        case "sjjdjdjdhd":
             if (isBanned) return reply(mess.ban)
             reply("Sedang Menampilkan List Menu")
             jetzet = `${sender}`
