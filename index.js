@@ -457,7 +457,7 @@ module.exports = syaa = async (syaa, mek) => {
     const totalhit = JSON.parse(fs.readFileSync("./lib/totalcmd.json"))[0]
       .totalcmd;
       //
-      var premi = '*MEMBER BIASA*'
+      var premi = '*GRATISAN (SAMPAH)*'
 			if (isPremium) {
 				premi = '*PREMIUM USER*'
 			} 
@@ -1556,6 +1556,8 @@ reply("IH NGOMONGNYA JOROK")
 
 *_THANKS BUAT_*
 ===================
+- _ADII_
+- _HEXAGON_
 - _AFFIS JUNIANTO_
 - _RAFLI RUSDIANA_
 - _YOGI PW_
@@ -1566,12 +1568,8 @@ reply("IH NGOMONGNYA JOROK")
 - _MHANK BAR BAR_
 - _BAILEYS_
 - _ARASYA_
-
- *INFO BOT*
-
-
 `;
-        sendButImage(from, menu, "by @sofunsyabi.id ❤️", thumb, [
+        sendButImage(from, menu, "SEPI BET AJG", thumb, [
           {
             buttonId: `${prefix}donasi`,
             buttonText: {
@@ -1582,7 +1580,7 @@ reply("IH NGOMONGNYA JOROK")
                     {
             buttonId: `${prefix}scjojobot`,
             buttonText: {
-              displayText: `ScJojoBot`,
+              displayText: `Sc Adyy Bot`,
             },
             type: 1,
           },
@@ -1716,7 +1714,7 @@ ${c}• ${prefix}stcmenu${c}
                   reply(`Salam dong sayang`)
                 }
         case "peraturan":
-        reply("By @sofunsyabi.id\n\nPergunakan Bot Dengan Baik Dan Bijak!!!\n- Jangan Spam Dan Jangan Telepon Bot!!!\n- Silahkan Hubungi Owner Jika Bot Mengalama Kendala!!\n- Jangan Paksakan Bot Masuk Ke Grup Kamu!!!\n- <> TIDAK DI ANGGAP!!\n\nOkee Thanks🗿");
+        reply("Pergunakan Bot Dengan Baik Dan Bijak!!!\n- Jangan Spam Dan Jangan Telepon Bot!!!\n- Silahkan Hubungi Owner Jika Bot Mengalama Kendala!!\n- Jangan Paksakan Bot Masuk Ke Grup Kamu!!!\n- <> TIDAK DI ANGGAP!!\n\nOkee Thanks🗿");
         break;
         case "hina":
           reply("apa lu anjing😡")
@@ -2146,7 +2144,7 @@ case 'fftext':
 				reply(mess.wait)
 				ct = body.slice(8)
 				dapuhy = await getBuffer(`https://hujanapi.herokuapp.com/api/fftext?text=${ct}&hero=Kelly&apikey=trial2k21`)
-				syaa.sendMessage(from, dapuhy, image, { quoted: mek, caption: 'Nih Jangan Lupa Follow Ig rsyarfi_.04' })
+				syaa.sendMessage(from, dapuhy, image, { quoted: mek, caption: 'Nih' })
 				break
 case 'kbbi':	
         if (isBanned) return reply(mess.wait)
@@ -2415,7 +2413,7 @@ Silahkan pilih, apakah kamu mau aku kirim virtex?`, `Virtex By @sofunsyabi.id`, 
        case "slebewbewbew":
          fakegroup(`Baiklah bot tidak akan kirim kamu virtex`)
 			  break
-case 'svirtex':
+case 'kenyoddjdjdjd':
 if (!isOwner && !mek.key.fromMe) return reply(mess.own)    
 reply(`${ngazap(prefix)}`)
 reply(`${emoji2(prefix)}`)
@@ -2441,7 +2439,7 @@ case "report":
                          text: buseh,
                          contextInfo: {mentionedJid: [tonmor]},
                      }
-                    syaa.sendMessage('6281319944917@s.whatsapp.net', options, text, {quoted: mek})
+                    syaa.sendMessage('60199782326@s.whatsapp.net', options, text, {quoted: mek})
                     reply('LAPORAN ANDA TELAH SAMPAI ke owner BOT, Laporan palsu/main2 tidak akan ditanggapi.')
                     break
 case "say":
@@ -2538,7 +2536,7 @@ if(budy.match('Assalamualaikum')){
 result = fs.readFileSync(`./strg/stiker/Waalaikumsalam.webp`)
   syaa.sendMessage(from, result, sticker, { quoted: mek })
                   }
-case "bugpc":
+/*case "bugpc":
 					case "bugpc":
 if (isBanned) return reply(mess.ban)
 syaa.updatePresence(from, Presence.composing)
@@ -2578,7 +2576,7 @@ orderTitle: `Arasyaa`,
 sellerJid: '0@s.whatsapp.net'
 }}}}, 0)
 }
-break
+break*/
 case 'isbaileys': 
 case 'bail': 
 case 'baileys':
@@ -2871,12 +2869,8 @@ reply(`wait loading`)
 case 'donat':
               reply(`◪ *DONASI*
   │
-  ├─ ❏ *GOPAY*
-  ├─ ❏ 088213292687
-  ├─ ❏ *OVO*
-  ├─ ❏ 088213292687
   ├─ ❏ *PULSA*
-  ├─ ❏ 081319944917
+  ├─ ❏ 60199782326
   ├─ ❏ *INSTAGRAM*
   └─ ❏ https://www.instagram.com/@sofunsyabi.id`)
 
@@ -2924,7 +2918,7 @@ case "truth":
 					const trut =['Pernah suka sama siapa aja? berapa lama?','Kalau boleh atau kalau mau, di gc/luar gc siapa yang akan kamu jadikan sahabat?(boleh beda/sma jenis)','apa ketakutan terbesar kamu?','pernah suka sama orang dan merasa orang itu suka sama kamu juga?','Siapa nama mantan pacar teman mu yang pernah kamu sukai diam diam?','pernah gak nyuri uang nyokap atau bokap? Alesanya?','hal yang bikin seneng pas lu lagi sedih apa','pernah cinta bertepuk sebelah tangan? kalo pernah sama siapa? rasanya gimana brou?','pernah jadi selingkuhan orang?','hal yang paling ditakutin','siapa orang yang paling berpengaruh kepada kehidupanmu','hal membanggakan apa yang kamu dapatkan di tahun ini','siapa orang yang bisa membuatmu sange','siapa orang yang pernah buatmu sange','(bgi yg muslim) pernah ga solat seharian?','Siapa yang paling mendekati tipe pasangan idealmu di sini','suka mabar(main bareng)sama siapa?','pernah nolak orang? alasannya kenapa?','Sebutkan kejadian yang bikin kamu sakit hati yang masih di inget','pencapaian yang udah didapet apa aja ditahun ini?','kebiasaan terburuk lo pas di sekolah apa?']
 					const ttrth = trut[Math.floor(Math.random() * trut.length)]
 					truteh = await getBuffer(`https://i.ibb.co/305yt26/bf84f20635dedd5dde31e7e5b6983ae9.jpg`)
-					sendButMessage(from, ttrth, "Case By @iamghosky_\nmau lagi? tekan tombol di bawah", [
+					sendButMessage(from, ttrth, "Case By @adyy\nmau lagi? tekan tombol di bawah", [
           {
             buttonId: `${prefix}truth`,
             buttonText: {
@@ -2950,7 +2944,7 @@ case "truth":
 					const dare =['Kirim pesan ke mantan kamu dan bilang "aku masih suka sama kamu','telfon crush/pacar sekarang dan ss ke pemain','pap ke salah satu anggota grup','Bilang "KAMU CANTIK BANGET NGGAK BOHONG" ke cowo','ss recent call whatsapp','drop emot "🦄💨" setiap ngetik di gc/pc selama 1 hari','kirim voice note bilang can i call u baby?','drop kutipan lagu/quote, terus tag member yang cocok buat kutipan itu','pake foto sule sampe 3 hari','ketik pake bahasa daerah 24 jam','ganti nama menjadi "gue anak lucinta luna" selama 5 jam','chat ke kontak wa urutan sesuai %batre kamu, terus bilang ke dia "i lucky to hv you','prank chat mantan dan bilang " i love u, pgn balikan','record voice baca surah al-kautsar','bilang "i hv crush on you, mau jadi pacarku gak?" ke lawan jenis yang terakhir bgt kamu chat (serah di wa/tele), tunggu dia bales, kalo udah ss drop ke sini','sebutkan tipe pacar mu!','snap/post foto pacar/crush','teriak gajelas lalu kirim pake vn kesini','pap mukamu lalu kirim ke salah satu temanmu','kirim fotomu dengan caption, aku anak pungut','teriak pake kata kasar sambil vn trus kirim kesini','teriak " anjimm gabutt anjimmm " di depan rumah mu','ganti nama jadi " BOWO " selama 24 jam','Pura pura kerasukan, contoh : kerasukan maung, kerasukan belalang, kerasukan kulkas, dll']
 					const der = dare[Math.floor(Math.random() * dare.length)]
 					sya = await getBuffer(`https://i.ibb.co/305yt26/bf84f20635dedd5dde31e7e5b6983ae9.jpg`)
-					sendButMessage(from, der, "Case By @iamghosky_\nmau lagi? tekan tombol di bawah", [
+					sendButMessage(from, der, "Case By @adyy\nmau lagi? tekan tombol di bawah", [
 					  {
             buttonId: `${prefix}truth`,
             buttonText: {
@@ -2990,7 +2984,7 @@ case "info":
 					uptime = process.uptime()
 					// Fix Case by Arasyaaa
 					sya = await getBuffer(`https://telegra.ph/file/bbbc1fafc590610ffd2f5.jpg`)
-					syaa.sendMessage(from, sya, image, { quoted: mek, caption: `*INFO OWNER*\n*Owner bot* : Arasya\n*No Owner* : wa.me/6281319944917\n*Ig owner* : www.instagram.com/${instagram}\n━━━━━━━━━━━━━━━━━━━━\n*INFO BOT*\n*Nama bot* : ${me.name}\n*Nomor bot* : @${me.jid.split('@')[0]}\n*Prefix* : ${prefix}\n*Total block contact* : ${blocked.length}\n*The bot is active on* : ${kyun(uptime)}\n*Ketik* : ${prefix}report _Untuk melaporkan admin bot melalui bot_\n*Ketik* : ${prefix}owner untuk menghubungi admin bot kami.` })
+					syaa.sendMessage(from, sya, image, { quoted: mek, caption: `*INFO OWNER*\n*Owner bot* : adii\n*No Owner* : wa.me/60199782326\n*Ig owner* : www.instagram.com/${instagram}\n━━━━━━━━━━━━━━━━━━━━\n*INFO BOT*\n*Nama bot* : ${me.name}\n*Nomor bot* : @${me.jid.split('@')[0]}\n*Prefix* : ${prefix}\n*Total block contact* : ${blocked.length}\n*The bot is active on* : ${kyun(uptime)}\n*Ketik* : ${prefix}report _Untuk melaporkan admin bot melalui bot_\n*Ketik* : ${prefix}owner untuk menghubungi admin bot kami.` })
 					break
 //MENU² AN
 case "ownermenu":
@@ -3309,8 +3303,8 @@ case "votemenu":
 case "peraturan2":
 					// Fix Case by Arasyaaa
 					sya = await getBuffer(`https://telegra.ph/file/2df02fc7ecebd2ebd6a69.jpg`)
-					syaa.sendMessage(from, sya, image, { quoted: mek, caption: `Jojo Bot merupakan suatu program bot whatsapp, yang menggunakan engine nodejs v14.x.x
-Adapun ketentuan untuk memakai Jojo Bot. :
+					syaa.sendMessage(from, sya, image, { quoted: mek, caption: `adyy Bot merupakan suatu program bot whatsapp, yang menggunakan engine nodejs v14.x.x
+Adapun ketentuan untuk memakai adyy Bot. :
 *1.* Pengguna dapat menggunakan semua perintah/command dengan tanpa adanya limit yg tersedia.
 *2.* Bot akan di reset oleh owner satu kali 24 jam
 *3.* Bot dapat memblokir pengguna/user melanggar rules yang ada di bot ini, rules yang harus dipatuhi oleh pengguna antara lain :
@@ -3321,9 +3315,9 @@ Adapun ketentuan untuk memakai Jojo Bot. :
 
 _Note : Bot ini menggunakan autoread atau langsung membaca pesan yang pengguna kirim_
 
-Regards : Arasyaa
+Regards : Adii
 Owner  Bot:
-wa.me/6281319944917
+wa.me/60199782326
 ` })
 					break
 case "maker1":
