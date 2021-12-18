@@ -1587,7 +1587,7 @@ let gamburnya = await getBuffer(ppuser)
 - _BAILEYS_
 - _ARASYA_
 `;
-        sendButLocation(from, menu, "SEPI BET AJG", ppuser, [
+        sendButLocation(from, menu, "SEPI BET AJG", gamburnya, [
           {
             buttonId: `${prefix}donasi`,
             buttonText: {
