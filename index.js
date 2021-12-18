@@ -868,6 +868,18 @@ module.exports = syaa = async (syaa, mek) => {
         options
       );
     };
+const sendButLocation = async (id, text1, desc1, gam1, but = [], options = {}) => {
+kma = gam1
+mhan = await syaa.prepareMessage(id, kma, MessageType.location, {thumbnail: kma})
+const buttonMessages = {
+locationMessage: mhan.message.locationMessage,
+contentText: text1,
+footerText: desc1,
+buttons: but,
+headerType: 6
+}
+syaa.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
+}
     const kick = function (from, orangnya) {
       for (let i of orangnya) {
         syaa.groupRemove(from, [i]);
@@ -1265,21 +1277,27 @@ reply("IH NGOMONGNYA JOROK")
               case "menu":
             if (isBanned) return reply(mess.ban)
             cender = `${sender}`
+            let gambah = 'https://telegra.ph/file/a7c465757058a36e1b565.jpg'
+try {
+       ppuser = await conn.getProfilePicture(`${sender}`)
+    } catch {
+       ppuser = gambah
+    }
+let gamburnya = await getBuffer(ppuser)
+
             var menu = `${ucapanWaktu} kak *${pushname}*
         
-❋─────────────────❋
 *• Nama :* ${pushname}
 *• Tag :* @${cender.split('@')[0]}
 *• Status :* ${premi}
 *• Jam :* ${jam}
 *• Hari :* ${week} ${weton}
 *• Tanggal :* ${date}
-*• Prefix :* 「 ${prefixStatus ? "Multi Prefix" : "No Prefix"} 」
+*• Prefix :* 「 ${prefix} 」
 *• Runtime :* ${runtime(process.uptime())}
 *• Hit Today :* ${hit_today.length} Hit
 *• Total Hit :* ${totalhit} Hit
 *• Total Chat :* ${totalchat.length} Chat
-❋─────────────────❋
 
 *OWNER*
 • ${prefix}off
@@ -1569,7 +1587,7 @@ reply("IH NGOMONGNYA JOROK")
 - _BAILEYS_
 - _ARASYA_
 `;
-        sendButImage(from, menu, "SEPI BET AJG", thumb, [
+        sendButLocation(from, menu, "SEPI BET AJG", ppuser, [
           {
             buttonId: `${prefix}donasi`,
             buttonText: {
