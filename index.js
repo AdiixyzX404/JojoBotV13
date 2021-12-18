@@ -919,7 +919,7 @@ syaa.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
                 }
             }
             if (aefka.hasOwnProperty(sender.split('@')[0])) {
-                reply("Kaka udah keluar dari mode afk, Selamat Datang Kembali👋")
+                reply("Kamu keluar dari mode afk, Selamat Datang Kembali👋")
                 delete aefka[sender.split('@')[0]]
                 fs.writeFileSync("./database/afk.json", JSON.stringify(aefka))
             }
@@ -1279,7 +1279,7 @@ reply("IH NGOMONGNYA JOROK")
             cender = `${sender}`
             let gambah = 'https://telegra.ph/file/a7c465757058a36e1b565.jpg'
 try {
-       ppuser = await conn.getProfilePicture(`${sender}`)
+       ppuser = await conn.getProfilePicture(sender)
     } catch {
        ppuser = gambah
     }
