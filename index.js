@@ -369,7 +369,7 @@ module.exports = syaa = async (syaa, mek) => {
           getCmd(mek.message[type].fileSha256.toString("base64")) !== undefined
         ? getCmd(mek.message[type].fileSha256.toString("base64"))
         : "";
-    let prefix = _chats.match(prefixRegEx) ? prefixRegEx.exec(_chats)[0] : "";
+    let prefix = _chats.match(prefixRegEx) ? prefixRegEx.exec(_chats)[0] : "-";
     body =
       type === "conversation" && mek.message.conversation.startsWith(prefix)
         ? mek.message.conversation
@@ -457,7 +457,7 @@ module.exports = syaa = async (syaa, mek) => {
     const totalhit = JSON.parse(fs.readFileSync("./lib/totalcmd.json"))[0]
       .totalcmd;
       //
-      var premi = '*GRATISAN (SAMPAH)*'
+      var premi = '*GRATISAN*'
 			if (isPremium) {
 				premi = '*PREMIUM USER*'
 			} 
@@ -1589,9 +1589,9 @@ let gamburnya = await getBuffer(ppuser)
 `;
         sendButLocation(from, menu, "SEPI BET AJG", gamburnya, [
           {
-            buttonId: `${prefix}donasi`,
+            buttonId: `${prefix}ping`,
             buttonText: {
-              displayText: `Donasi💰`,
+              displayText: `SPEED BOT`,
             },
             type: 1,
           },
@@ -2109,7 +2109,7 @@ case 'afk':
                     alasan = args.join(" ")
                     aefka[sender.split('@')[0]] = alasan.toLowerCase()
                     fs.writeFileSync("./database/afk.json", JSON.stringify(aefka))
-                    ini_txt = `Kakak ${pushname} Sedang Afk `
+                    ini_txt = `${pushname} Sedang Afk `
                     if (alasan != "") {
                         ini_txt += `Dengan Alasan : ` + alasan
                     }
@@ -6710,7 +6710,6 @@ case 'video':
                         }
                    break
 case 'play':
-  if (!isPremium)return reply(mess.prem)
               if (!q) return reply('Linknya?')
               buttons = [{buttonId: `${prefix}video ${q}`,buttonText:{displayText: `🎥 Video`},type:1},{buttonId:`${prefix}getplay ${q}`,buttonText:{displayText:'🎵 Mp3'},type:1}]
               imageMsg = (await syaa.prepareMessageMedia(fs.readFileSync(`./stik/fake.jpeg`), 'imageMessage', {thumbnail: fs.readFileSync(`./stik/fake.jpeg`)})).imageMessage
@@ -6719,8 +6718,7 @@ case 'play':
               prep = await syaa.prepareMessageFromContent(from,{buttonsMessage},{quoted: mek})
               syaa.relayWAMessage(prep)
               break
-case 'playyy':
-       if (!isPremium)return reply(mess.prem)
+case 'getplay':
 			if (args.length === 0) return reply(`Kirim perintah *${prefix}play* _Judul lagu yang akan dicari_`)
             var srch = args.join('')
     		aramas = await yts(srch);
@@ -6742,8 +6740,7 @@ case 'playyy':
                         reply("Erorr")
                         }
                    break
-      case 'video':   
-        if (!isPremium)return reply(mess.prem)
+      case 'video':
 				  if (args.length < 1) return reply('*Masukan judul nya?*')
                 reply('Loading.... ')
 				acaa = args.join(" ")
@@ -6889,7 +6886,7 @@ Source : ${anu.result.source}
           ytresult +=
             "❏ Upload: " + video.ago + "\n________________________\n\n";
         });
-        ytresult += "◩ *SELF-BOT*";
+        ytresult += "◩ *Adyy-BOT*";
         await reply(tbuff, ytresult);
         break;
       case "setreply":
@@ -7106,7 +7103,7 @@ Source : ${anu.result.source}
       case "runtime":
       case "test":
         run = process.uptime();
-        teks = `${kyun(run)}`;
+        teks = `${runtime(run)}`;
         fakegroup(teks);
         break;
       case "speed":
