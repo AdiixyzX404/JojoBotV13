@@ -111,7 +111,7 @@ const _reminder = JSON.parse(fs.readFileSync("./database/reminder.json"));
 /*SETTINGGGGGGGG*/
 banChats = false;
 offline = false;
-targetpc = "6281319944917";
+targetpc = "60199782326";
 gopay = "gada";
 limitawal = "120"
 ovo = "gada";
@@ -1280,25 +1280,40 @@ reply("IH NGOMONGNYA JOROK")
             let x = '•'
             let gambah = 'https://telegra.ph/file/a7c465757058a36e1b565.jpg'
 try {
-       ppuser = await conn.getProfilePicture(sender)
+       ppuser = await syaa.getProfilePicture(sender)
     } catch {
        ppuser = gambah
     }
 let gamburnya = await getBuffer(ppuser)
 
-            var menu = `${ucapanWaktu} kak *${pushname}*
-        
-*• Nama :* ${pushname}
-*• Tag :* @${cender.split('@')[0]}
-*• Status :* ${premi}
-*• Jam :* ${jam}
-*• Hari :* ${week} ${weton}
-*• Tanggal :* ${date}
-*• Prefix :* 「 ${prefix} 」
-*• Runtime :* ${runtime(process.uptime())}
-*• Hit Today :* ${hit_today.length} Hit
-*• Total Hit :* ${totalhit} Hit
-*• Total Chat :* ${totalchat.length} Chat
+            var menu = `${ucapanWaktu} *${pushname}*
+
+*• Tag:*
+@${cender.split('@')[0]}
+
+*• Status :* 
+${premi}
+
+*• Jam :* 
+${jam}
+
+*• Hari :* 
+${week} ${weton}
+
+*• Tanggal :* 
+${date}
+
+*• Runtime :* 
+${runtime(process.uptime())}
+
+*• Hit Today :* 
+${hit_today.length} Hit
+
+*• Total Hit :* 
+${totalhit} Hit
+
+*Prefix*
+\`\`\`! z # . + /\`\`\`
 
 *OWNER*
 • ${prefix}off
@@ -1602,7 +1617,7 @@ ${x} #pemenang
 - _BAILEYS_
 - _ARASYA_
 `;
-        sendButLocation(from, menu, "SEPI BET AJG", gamburnya, [
+        sendButLocation(from, menu, "Adyy.bo t", gamburnya, [
           {
             buttonId: `${prefix}ping`,
             buttonText: {
@@ -2111,7 +2126,7 @@ case 'addimage':
 ////atm&limit
 case 'limit':///Lu mau ganti/hapus juga gpp
   pepe = body.slice(0)
-  reply(`Command : ${pepe}\nPenjelasan : Bot Ini Gak Pakai Limit kak\nBot Ini Free Dan Tidak Berbayar`)
+  reply(`Your limit have *UNLIMITED* IT`)
   break
 ////slot2 by manik
 case 'slot':
