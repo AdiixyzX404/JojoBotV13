@@ -1277,6 +1277,7 @@ reply("IH NGOMONGNYA JOROK")
               case "menu":
             if (isBanned) return reply(mess.ban)
             cender = `${sender}`
+            let x = '•'
             let gambah = 'https://telegra.ph/file/a7c465757058a36e1b565.jpg'
 try {
        ppuser = await conn.getProfilePicture(sender)
@@ -1423,6 +1424,20 @@ let gamburnya = await getBuffer(ppuser)
 • ${prefix}dare
 • ${prefix}wangy _NamaMu_
 • ${prefix}citacita
+${x} #ganteng
+${x} #beban
+${x} #cantik
+${x} #jelek
+${x} #hebat
+${x} #wibu
+${x} #pakboy
+${x} #pakgirl
+${x} #sange
+${x} #nolep
+${x} #jahat
+${x} #baik
+${x} #wangy
+${x} #pemenang
 
 *STICKER MENU*
 • ${prefix}stcmeme Atas|bawah
@@ -1605,6 +1620,39 @@ let gamburnya = await getBuffer(ppuser)
         ], {contextInfo: { mentionedJid: [cender]}});
 
         break;
+case 'ganteng':
+case 'beban':
+case 'cantik':
+case 'jelek':
+case 'nggagur':
+case 'hebat':
+case 'wibu':
+case 'pakboy':
+case 'pakgirl':
+case 'sange':
+case 'nolep':
+case 'jahat':
+case 'baik':
+membr = []
+const nus = groupMembers
+const msl = groupMembers
+const siapss = nus[Math.floor(Math.random() * nus.length)]
+const sipss = pushname[Math.floor(Math.random() * msl.length)]
+teks = `Yang paling ${command} disini Adalah : @${siapss.jid.split('@')[0]}`
+membr.push(siapss.jid)
+mentions(teks, membr, true)
+break
+case 'pemenang':
+anuu = args.join(' ')
+membrr = []
+const nuss = groupMembers
+const msll = groupMembers
+const siapsss = nuss[Math.floor(Math.random() * nuss.length)]
+const sipsss = pushname[Math.floor(Math.random() * msll.length)]
+teks = `Pemenang giveaway di group ini dengan hadiah *${anuu}* adalah: @${siapsss.jid.split('@')[0]}\nSelamat 🥳🥳🥳`
+membrr.push(siapsss.jid)
+mentionss(teks, membrr, true)
+break
         case 'leave':
           if (isBanned) return reply(mess.ban)
              if (!isGroup) return reply("Khusus di grup");
