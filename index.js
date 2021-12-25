@@ -1286,7 +1286,52 @@ try {
     }
 let gamburnya = await getBuffer(ppuser)
 
-var memnu = `
+sendButLocation(from, `Hai ${pushname}\n\nSaya AdyyBot, Bot WhatsApp yg membantu kamu untuk mempermudah sesuatu seperti Membuat Sticker dan Lainnya, Ada Butuh Info Dariku?`, `Note: Kalo kamu pakai wa lama atau mod, dan button ga keliatan, langsung aja ketik ${prefix}allmenu`, gamburnya, [
+          {
+            buttonId: `${prefix}allmenu`,
+            buttonText: {
+              displayText: `ALL COMMANDS`,
+            },
+            type: 1,
+          },
+                    {
+            buttonId: `${prefix}owner`,
+            buttonText: {
+              displayText: `OWNER`,
+            },
+            type: 1,
+          },
+        ]);
+
+        break;
+
+case 'allmenu':
+var memnu = `${ucapanWaktu} *${pushname}*
+
+*• Status :* 
+${premi}
+
+*• Jam :* 
+${jam}
+
+*• Hari :* 
+${week} ${weton}
+
+*• Tanggal :* 
+${date}
+
+*• Runtime :* 
+${runtime(process.uptime())}
+
+*• Hit Today :* 
+${hit_today.length} Hit
+
+*• Total Hit :* 
+${totalhit} Hit
+
+*• Prefix :*
+\`\`\`! z # . + /\`\`\`
+
 *OWNER*
 • ${prefix}off
 • ${prefix}on
@@ -1589,26 +1634,10 @@ ${x} #pemenang
 - _BAILEYS_
 - _ARASYA_
 `;
-        sendButLocation(from, `Hai ${pushname}\n\nSaya AdyyBot, Bot WhatsApp yg membantu kamu untuk mempermudah sesuatu seperti Membuat Sticker dan Lainnya, Ada Butuh Info Dariku?`, `Note: Kalo kamu pakai wa lama atau mod, dan button ga keliatan, langsung aja ketik ${prefix}allmenu`, gamburnya, [
-          {
-            buttonId: `${prefix}allmenu`,
-            buttonText: {
-              displayText: `COMMAND`,
-            },
-            type: 1,
-          },
-                    {
-            buttonId: `${prefix}owner`,
-            buttonText: {
-              displayText: `OWNER`,
-            },
-            type: 1,
-          },
-        ]);
+reply(memnu)
+break
 
-        break;
-
-case 'allmenu':
+/*case 'allmenu':
 var menu = `${ucapanWaktu} *${pushname}*
 
 *• Tag:*
@@ -1704,7 +1733,7 @@ await sendButLocation(from, menu, `by adii`, gamburnya, [
             },
             type: 1,
           }
-        ], {contextInfo: { mentionedJid: [cender]}});
+        ], {contextInfo: { mentionedJid: [cender]}});*/
 
 case 'ganteng':
 case 'beban':
