@@ -1276,7 +1276,6 @@ reply("IH NGOMONGNYA JOROK")
               case "menu":
             if (isBanned) return reply(mess.ban)
             cender = `${sender}`
-            let x = '•'
             let gambah = 'https://telegra.ph/file/a7c465757058a36e1b565.jpg'
 try {
        ppuser = await syaa.getProfilePicture(sender)
