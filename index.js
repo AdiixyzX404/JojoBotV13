@@ -1272,7 +1272,6 @@ reply("IH NGOMONGNYA JOROK")
     if (prefixStatus) if (_chats.startsWith(command)) return;
     switch (command) {
       case "infomenu":
-        case "allmenu":
           case "menuall":
               case "menu":
             if (isBanned) return reply(mess.ban)
