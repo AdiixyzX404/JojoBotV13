@@ -1305,6 +1305,7 @@ sendButLocation(from, `Hai ${pushname}\n\nSaya AdyyBot, Bot WhatsApp yg membantu
         break;
 
 case 'allmenu':
+x = '•'
 var memnu = `${ucapanWaktu} *${pushname}*
 
 *• Status :* 
