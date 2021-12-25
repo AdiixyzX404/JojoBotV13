@@ -1286,35 +1286,7 @@ try {
     }
 let gamburnya = await getBuffer(ppuser)
 
-            var menu = `${ucapanWaktu} *${pushname}*
-
-*• Tag:*
-@${cender.split('@')[0]}
-
-*• Status :* 
-${premi}
-
-*• Jam :* 
-${jam}
-
-*• Hari :* 
-${week} ${weton}
-
-*• Tanggal :* 
-${date}
-
-*• Runtime :* 
-${runtime(process.uptime())}
-
-*• Hit Today :* 
-${hit_today.length} Hit
-
-*• Total Hit :* 
-${totalhit} Hit
-
-*Prefix*
-\`\`\`! z # . + /\`\`\`
-
+var memnu = `
 *OWNER*
 • ${prefix}off
 • ${prefix}on
@@ -1617,24 +1589,123 @@ ${x} #pemenang
 - _BAILEYS_
 - _ARASYA_
 `;
-        sendButLocation(from, menu, "Adyy.bo t", gamburnya, [
+        sendButLocation(from, `Hai ${pushname}\n\nSaya AdyyBot, Bot WhatsApp yg membantu kamu untuk mempermudah sesuatu seperti Membuat Sticker dan Lainnya, Ada Butuh Info Dariku?`, `Note: Kalo kamu pakai wa lama atau mod, dan button ga keliatan, langsung aja ketik ${prefix}allmenu`, gamburnya, [
           {
-            buttonId: `${prefix}ping`,
+            buttonId: `${prefix}allmenu`,
             buttonText: {
-              displayText: `SPEED BOT`,
+              displayText: `COMMAND`,
             },
             type: 1,
           },
                     {
-            buttonId: `${prefix}scjojobot`,
+            buttonId: `${prefix}owner`,
             buttonText: {
-              displayText: `Sc Adyy Bot`,
+              displayText: `OWNER`,
             },
             type: 1,
           },
-        ], {contextInfo: { mentionedJid: [cender]}});
+        ]);
 
         break;
+
+case 'allmenu':
+var menu = `${ucapanWaktu} *${pushname}*
+
+*• Tag:*
+@${cender.split('@')[0]}
+
+*• Status :* 
+${premi}
+
+*• Jam :* 
+${jam}
+
+*• Hari :* 
+${week} ${weton}
+
+*• Tanggal :* 
+${date}
+
+*• Runtime :* 
+${runtime(process.uptime())}
+
+*• Hit Today :* 
+${hit_today.length} Hit
+
+*• Total Hit :* 
+${totalhit} Hit
+
+*• Prefix :*
+\`\`\`! z # . + /\`\`\`
+`
+
+var listMsg = {
+ buttonText: 'LIST MENU',
+ footerText: '*_© Adii_*',
+ description: `Hai kak @${stod.split('@')[0]}, Silahkan pilih menu disini`,
+ sections: [
+                     {
+                      "title": `${jmn} - ${week} ${weton} - ${calender}`,
+ rows: [
+                          {
+                              "title": "Owner Menu",
+                              "rowId": ""
+                           },
+                           {
+                              "title": "Group Menu",
+                              "rowId": ""
+                           },
+                           {
+                              "title": "Maker Menu",
+                              "rowId": ""
+                           },
+                           {
+                              "title": "NSFW Menu",
+                              "rowId": ""
+                           },
+                           {
+                              "title": "Fun Menu",
+                              "rowId": ""
+                           },
+                           {
+                              "title": "Sticker Menu",
+                              "rowId": ""
+                           },
+                           {
+                              "title": "Convert Menu",
+                              "rowId": ""
+                           },
+                           {
+                              "title": "MakerMenu",
+                              "rowId": ""
+                           },
+                           {
+                              "title": "GroupMenu",
+                              "rowId": ""
+                           },
+                           {
+                              "title": "OtherMenu",
+                              "rowId": ""
+                           },
+                           {
+                              "title": "DownloadMenu",
+                              "rowId": ""
+                           }
+                        ]
+                     }],
+ listType: 1
+}
+
+await sendButLocation(from, menu, `by adii`, gamburnya, [
+          {
+            buttonId: `${prefix}ping`,
+            buttonText: {
+              displayText: `SPEEDBOT`,
+            },
+            type: 1,
+          }
+        ], {contextInfo: { mentionedJid: [cender]}});
+
 case 'ganteng':
 case 'beban':
 case 'cantik':
